@@ -1,0 +1,35 @@
+<!--pages/theory/theory.wxml-->
+<view class="theory">
+  <view class="theory-top">
+    <view class="theory-cover">学习原理</view>
+  </view>
+  <view class="theory-info">
+    <view class="theory-title">学习原理：</view>
+    <view class="theory-txt">
+      <view class="theory-section">
+        <text class="theory-red">口语</text>"就是“按照自己的思维，组织成正确的句子，流利的表达出来”。也就是说，口语包括<text class="theory-line                    ">思维，组织和表达</text>这三个方面。
+      </view>
+      <view class="theory-section">
+        我们可以这样去分析：首先，思维是起点，控制着口语的整个形成过程；其次，10岁之后，思维已经形成；最后，语言的组织和表达是口语的组成部分，需要进行相应的训练。
+      </view>
+      <view class="theory-section">
+      我们在口语学习中，遇到的主要困难就是思维，它是起点并且已经形成，因此任何的英语学习必须符合自己的思维。这就是为什么我们在口语学习过程中，一直没有突破的关键所在。同时，思维是高于母语思维而存在的，母语思维只是思维的表现形式。由此可以看出，英语思维也是思维的一种表现形式。
+      </view >
+      <view class="theory-section">
+      这就为我们找到了英语学习的捷径。我们只需将我们平时讲的汉语进行收集，并翻译成英语。这些英语就是思维在英语方面的表现形式。我们无论怎么学口语，最终的目标就是为了说出这些翻译而来的英语，只是我们帮大家提前找了出来，这样不但效率高，效果好，还可以直接培养英语思维。
+      </view >
+      <view class="theory-section">
+      现在，我们运用人工智能技术帮助大家从平时的汉语交流中收集汉语句子，借助机器和人工翻译，按照遗忘规律推送给大家学习。日常交流的口语一般只有几百句话，比较容易掌握。如果一天掌握30句，差不多一个月就能完成，如果一天掌握15句，两个月就可以实现。
+      </view >
+      <view class="theory-section">
+      因此，我们只需把这些翻译的句子学好了，就解决了思维和组织这两方面的问题。同时，加上发音辅助的表达训练，这样就解决了口语的思维，组织和表达这三个方面的所有问题，流利英语自然脱口而出。
+      </view >
+      <view class="theory-section">
+      更进一步，如果把单词放在我们的生活中记忆，不但容易记住，还会清楚地知道如何使用。通过日常汉语交流中翻译而来的句子来记忆单词就是非常高效的方法。
+      </view >
+      <view class="theory-section">
+      效率和效果是检验任何学习方法的两大标准，你只需试用一周就知道连派口语的威力了！
+      </view >
+    </view>
+  </view>
+</view>

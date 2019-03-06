@@ -1,0 +1,10 @@
+<!--pages/method/method.wxml-->
+<view class="method">
+  <view class="method-top">
+    <view class="method-cover">学习方法</view>
+  </view>
+  <view class="method-info">
+    <view class="method-title">学习方法：</view>
+    <view class="method-txt">连派口语的学习方法就是学习者通过平常的汉语聊天进行语言的收集，借助翻译的辅助变为符合自己思维的英文，再经过系统的学习，实现流利英语的脱口而出。</view>
+  </view>
+</view>

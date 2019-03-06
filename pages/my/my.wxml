@@ -1,0 +1,87 @@
+<!--pages/my/my.wxml-->
+<view class='main-content'>
+  <view class='my-top'>
+    <view class='clearfix info'>
+      <image src='../../images/person_img.png' class='pull-left img01'></image>
+      <text class='pull-left'>Lady Gaga</text>
+      <image src='../../images/right_arrow.png' class='pull-right img02'></image>
+    </view>
+    <view class='day-box'> 
+      <view class='day-box01'>
+        <view class='day-box-item'>
+          <span><text>0</text> 天</span>
+          <text class='name'>学习天数</text>
+        </view>
+        <view class='day-box-item'>
+          <span><text>0</text> 天</span>
+          <text class='name'>口语收集</text>
+        </view>
+        <view class='day-box-item'>
+          <span><text>0</text> 天</span>
+          <text class='name'>口语学习</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='my-content-box'>
+    <navigator url='../method/method' class='clearfix box-item'>
+      <image src='../../images/icon01.png' class='pull-left'></image>
+      <text class='pull-left'>学习方法</text>
+      <image src='../../images/right_arrow01.png' class='pull-right'></image>
+    </navigator>
+    <navigator url='../theory/theory' class='clearfix box-item'>
+      <image src='../../images/icon02.png' class='pull-left'></image>
+      <text class='pull-left'>学习原理</text>
+      <image src='../../images/right_arrow01.png' class='pull-right'></image>
+    </navigator>
+    <navigator url='#' class='clearfix box-item'>
+      <image src='../../images/icon03.png' class='pull-left'></image>
+      <text class='pull-left'>操作方式</text>
+      <image src='../../images/right_arrow01.png' class='pull-right'></image>
+    </navigator>
+    <picker class='clearfix box-item' value="{{pic_array[hx_index].id}}" data-selecthx="{{pic_array[hx_index].name}}" range="{{pic_array}}" range-key="{{'name'}}"  bindchange="bindPickerChange_hx">
+      <image src='../../images/icon04.png' class='pull-left'></image>
+      <text class='pull-left'>学习设置</text>
+      <image src='../../images/right_arrow01.png' class='pull-right'></image>
+      <view class='pull-right picker'>{{pic_array[hx_index].name}}</view>
+    </picker>
+   <navigator url='../calendar/calendar' class='clearfix box-item'>
+      <image src='../../images/icon05.png' class='pull-left'></image>
+      <text class='pull-left'>学习日历</text>
+      <image src='../../images/right_arrow01.png' class='pull-right'></image>
+    </navigator>
+    <navigator url='#' class='clearfix box-item'>
+      <image src='../../images/icon06.png' class='pull-left'></image>
+      <text class='pull-left'>我的句子库</text>
+      <image src='../../images/right_arrow01.png' class='pull-right'></image>
+    </navigator>
+  </view>
+  <view class='my-content-box my-content-box01'>
+    <navigator url='#' class='clearfix box-item'>
+      <image src='../../images/icon07.png' class='pull-left'></image>
+      <text class='pull-left'>关于连派</text>
+      <image src='../../images/right_arrow01.png' class='pull-right'></image>
+    </navigator>
+    <navigator url='#' class='clearfix box-item'>
+      <image src='../../images/icon08.png' class='pull-left'></image>
+      <text class='pull-left'>版权证书</text>
+      <image src='../../images/right_arrow01.png' class='pull-right'></image>
+    </navigator>
+    <navigator url='#' class='clearfix box-item'>
+      <image src='../../images/icon09.png' class='pull-left'></image>
+      <text class='pull-left'>我是老师</text>
+      <image src='../../images/right_arrow01.png' class='pull-right'></image>
+    </navigator>
+    <navigator url='#' class='clearfix box-item'>
+      <image src='../../images/icon10.png' class='pull-left'></image>
+      <text class='pull-left'>学习设置</text>
+      <image src='../../images/right_arrow01.png' class='pull-right'></image>
+    </navigator>
+  </view>
+</view>
+<view class="bottom-section clearfix">
+    <navigator url="../home/home" redirect="true"><span><image src="../../images/bottom_icon01.png"></image></span><p>聊吧</p></navigator>
+    <navigator url="../ready/ready" redirect="true"><span><image src="../../images/bottom_icon02.png"></image></span><p>准备</p></navigator>
+    <navigator url="../3.2study/3.2study" redirect="true"><span><image src="../../images/bottom_icon03.png"></image></span><p>学习</p></navigator>
+    <navigator url="../my/my" redirect="true" class="active"><span><image src="../../images/bottom_color04.png"></image></span><p>我的</p></navigator>
+</view>

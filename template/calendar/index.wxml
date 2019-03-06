@@ -1,0 +1,31 @@
+<template name="calendar">
+	<view class="flex box box-tb box-align-center">
+		<view class="calendar pink-color box box-tb">
+			<view class="top-handle fs28 box box-lr box-align-center box-pack-center">
+				<view class="prev box box-rl" bindtap="handleCalendar" data-handle="prev">
+					<view class="prev-handle box box-lr box-align-center box-pack-center">
+            <image src="../../images/left.png"></image>
+          </view>
+				</view>
+				<view bindtap="chooseYearAndMonth" class="date-area box box-lr box-align-center box-pack-center fs24 gray-color">{{curYear || "--"}} 年 {{curMonth || "--"}} 月</view>
+				<view class="next box box-lr" bindtap="handleCalendar" data-handle="next">
+					<view class="next-handle box box-lr box-align-center box-pack-center">
+            <image src="../../images/right.png"></image>
+          </view>
+				</view>
+			</view>
+			 <view class="weeks box box-pack-center box-align-center">
+				<view class="flex week fs26" wx:for="{{weeksCh}}" wx:key="{{index}}" data-idx="{{index}}">{{item}}</view>
+			</view> 
+			<view class="days box box-lr box-wrap">
+				 <view wx:if="{{hasEmptyGrid}}" class="grid white-color box box-align-center box-pack-center" wx:for="{{empytGrids}}" wx:key="{{index}}" data-idx="{{index}}">
+				</view> 
+				<view class="grid white-color box box-lr box-align-center box-pack-center" wx:for="{{days}}" wx:key="{{index}}" data-idx="{{index}}" bindtap="tapDayItem">
+					<view class="day {{item.choosed ? 'border-square dark-bg' : ''}} box box-align-center box-pack-center gray-color fs23 box-tb {{item.panel?'big-cirle':''}}">
+          {{item.day}}
+          </view>
+				</view>
+			</view>
+		</view>
+	</view>
+</template>

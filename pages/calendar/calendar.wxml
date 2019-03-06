@@ -1,0 +1,11 @@
+<!--pages/calendar/calendar.wxml-->
+<import src="../../template/calendar/index.wxml"/>
+<view class="date">
+  <view class="date-top">
+    <view class="date-txt">success is the sum of small efforts repeated day in and day out</view>
+    <view class="date-font">成功，就是坚持每天努力一点点</view>
+  </view>
+  <view class="calendar-box">
+    <template is="calendar" data="{{...calendar}}" />
+  </view> 
+</view>

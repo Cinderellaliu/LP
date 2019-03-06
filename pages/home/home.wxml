@@ -1,0 +1,132 @@
+<!--pages/home/home.wxml-->
+<view class='main-content'>
+  <view class='home-box'>
+    <view class='home-box-item clearfix'>
+      <image src='../../images/madonna.png' class='pull-left'></image>
+      <view class='pull-left info-box'>
+        <text class='name'>Madanna</text>
+        <text class='info'>A good day begins</text>
+      </view>
+      <view class='time pull-right'>
+        <text>10:04</text>
+      </view>
+    </view>
+    <view class='home-box-item clearfix'>
+      <image src='../../images/ts.png' class='pull-left'></image>
+      <view class='pull-left info-box'>
+        <text class='name'>Taylor Swift</text>
+        <text class='info'>A good day begins</text>
+      </view>
+      <view class='time pull-right'>
+        <text>12:05</text>
+      </view>
+    </view>
+    <view class='home-box-item clearfix'>
+      <image src='../../images/pn.png' class='pull-left'></image>
+      <view class='pull-left info-box'>
+        <text class='name'>Rihanna</text>
+        <text class='info'>A good day begins</text>
+      </view>
+      <view class='time pull-right'>
+        <text>昨天</text>
+      </view>
+    </view>
+    <view class='home-box-item clearfix'>
+      <image src='../../images/will.png' class='pull-left'></image>
+      <view class='pull-left info-box'>
+        <text class='name'>WILL</text>
+        <text class='info'>A good day begins</text>
+      </view>
+      <view class='time pull-right'>
+        <text>星期五</text>
+      </view>
+    </view>
+    <view class='home-box-item clearfix'>
+      <image src='../../images/lg.png' class='pull-left'></image>
+      <view class='pull-left info-box'>
+        <text class='name'>Lady Gaga</text>
+        <text class='info'>A good day begins</text>
+      </view>
+      <view class='time pull-right'>
+        <text>10:55</text>
+      </view>
+    </view>
+    <view class='home-box-item clearfix'>
+      <image src='../../images/by.png' class='pull-left'></image>
+      <view class='pull-left info-box'>
+        <text class='name'>Beyoncé</text>
+        <text class='info'>A good day begins</text>
+      </view>
+      <view class='time pull-right'>
+        <text>11:40</text>
+      </view>
+    </view>
+    <view class='home-box-item clearfix'>
+      <image src='../../images/bt.png' class='pull-left'></image>
+      <view class='pull-left info-box'>
+        <text class='name'>Britney</text>
+        <text class='info'>A good day begins</text>
+      </view>
+      <view class='time pull-right'>
+        <text>昨天</text>
+      </view>
+    </view>
+  </view>
+  <view class="show-btn" bindtap="showDialogBtn">
+    <image src='../../images/list.png'></image>
+  </view>
+  <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+  <view class="modal-dialog" wx:if="{{showModal}}">
+    <view class="modal-content">
+      <view class='home-box-item clearfix'>
+        <image src='../../images/madonna.png' class='pull-left'></image>
+        <view class='pull-left info-box'>
+          <text class='name'>Madanna</text>
+        </view>
+      </view>
+      <view class='home-box-item clearfix'>
+        <image src='../../images/ts.png' class='pull-left'></image>
+        <view class='pull-left info-box'>
+          <text class='name'>Taylor Swift</text>
+        </view>
+      </view>
+      <view class='home-box-item clearfix'>
+        <image src='../../images/pn.png' class='pull-left'></image>
+        <view class='pull-left info-box'>
+          <text class='name'>Rihanna</text>
+        </view>
+      </view>
+      <view class='home-box-item clearfix'>
+        <image src='../../images/will.png' class='pull-left'></image>
+        <view class='pull-left info-box'>
+          <text class='name'>WILL</text>
+        </view>
+      </view>
+      <view class='home-box-item clearfix'>
+        <image src='../../images/lg.png' class='pull-left'></image>
+        <view class='pull-left info-box'>
+          <text class='name'>Lady Gaga</text>
+        </view>
+      </view>
+      <view class='home-box-item clearfix'>
+        <image src='../../images/by.png' class='pull-left'></image>
+        <view class='pull-left info-box'>
+          <text class='name'>Beyoncé</text>
+        </view>
+      </view>
+      <view class='home-box-item clearfix'>
+        <image src='../../images/bt.png' class='pull-left'></image>
+        <view class='pull-left info-box'>
+          <text class='name'>Britney</text>
+        </view>
+      </view>
+      </view>
+  </view>
+</view>
+<view class="bottom-section clearfix">
+    <navigator url="../home/home" redirect="true" class="active"><span><image src="../../images/bottom_color01.png"></image></span><p>聊吧</p></navigator>
+    <navigator url="../ready/ready" redirect="true"><span><image src="../../images/bottom_icon02.png"></image></span><p>准备</p></navigator>
+    <navigator url="../3.2study/3.2study" redirect="true"><span><image src="../../images/bottom_icon03.png"></image></span><p>学习</p></navigator>
+    <navigator url="../my/my" redirect="true"><span><image src="../../images/bottom_icon04.png"></image></span><p>我的</p></navigator>
+</view>
+

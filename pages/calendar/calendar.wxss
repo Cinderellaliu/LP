@@ -1,0 +1,33 @@
+/* pages/calendar/calendar.wxss */
+@import '../../template/calendar/index.wxss';
+page{
+  background:#f0f2f5
+}
+.date{
+  position:relative;
+}
+.date-top{
+  height:400rpx;
+  width:100%;
+  background-color: #90241a;
+  color:white;
+  overflow:hidden;
+}
+.date-txt{
+  max-width:520rpx;
+  font-size: 32rpx;
+  margin: 67rpx auto 47rpx;
+  text-align:center;
+  line-height: 40rpx;
+}
+.date-font{
+  font-size: 32rpx;
+  text-align:center;
+}
+.calendar-box{
+  position:absolute;
+  top:316rpx;
+  padding:0 20rpx;
+  width:100%;
+
+}

@@ -1,0 +1,97 @@
+<!--pages/3.2study/3.2study.wxml-->
+<view class='main-content'>
+  <view class='study-top'>
+    <view class='study-top-box clearfix'>
+      <image src='../../images/person_img.png' class='pull-left'></image>
+      <text class='name pull-left'>Lady Gaga</text>
+      <view class='s-right pull-right'>学习天数 <text>30</text> 天</view>
+    </view>
+  </view>
+  <view class="swiper-tab">
+      <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">今日学习</view>
+      <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">今日复习</view>
+      <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">今日检测</view>
+  </view>
+  <swiper current="{{currentTab}}" duration="300"  bindchange="swiperTab">
+    <swiper-item >
+      <view class='content-box' wx:for="{{listCon}}" wx:key="content" wx:for-index="key">
+        <view class='box-item' data-index='{{key}}' bindtap='hiddenBtnCon'>
+          <text>如你所愿</text>
+          <image src='../../images/more_img01.png' class="hide{{showView?'show':''}}"></image>
+          <image src='../../images/more_img.png' class="hide{{showView?'':'show'}}"></image>
+          <view class='english clearfix {{item.hidden == true? "hide":"show"}}'>
+            <text class='pull-left'>Be as you wish to seem</text>
+            <image src='../../images/voice.png' class='pull-left'></image>
+          </view>
+        </view>
+      </view>
+      <view class='content-box' wx:for="{{listCon1}}" wx:key="content" wx:for-index="key">
+        <view class='box-item' data-index='{{key}}' bindtap='hiddenBtnCon1'>
+          <text>如你所愿</text>
+          <image src='../../images/more_img01.png' class="hide{{showView?'show':''}}"></image>
+          <image src='../../images/more_img.png' class="hide{{showView?'':'show'}}"></image>
+          <view class='english clearfix {{item.hidden == true? "hide":"show"}}'>
+            <text class='pull-left'>Be as you wish to seem</text>
+            <image src='../../images/voice.png' class='pull-left'></image>
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view  class='content-box' wx:for="{{listCon}}" wx:key="content" wx:for-index="key">
+        <view class='box-item' data-index='{{key}}' bindtap='hiddenBtnCon'>
+          <text>如你所愿</text>
+          <image src='../../images/more_img01.png' class="hide{{showView?'show':''}}"></image>
+          <image src='../../images/more_img.png' class="hide{{showView?'':'show'}}"></image>
+          <view class='english clearfix {{item.hidden == true? "hide":"show"}}'>
+            <text class='pull-left'>Be as you wish to seem</text>
+            <image src='../../images/voice.png' class='pull-left'></image>
+          </view>
+        </view>
+      </view>
+      <view class='content-box' wx:for="{{listCon1}}" wx:key="content" wx:for-index="key">
+        <view class='box-item' data-index='{{key}}' bindtap='hiddenBtnCon1'>
+          <text>如你所愿</text>
+          <image src='../../images/more_img01.png' class="hide{{showView?'show':''}}"></image>
+          <image src='../../images/more_img.png' class="hide{{showView?'':'show'}}"></image>
+          <view class='english clearfix {{item.hidden == true? "hide":"show"}}'>
+            <text class='pull-left'>Be as you wish to seem</text>
+            <image src='../../images/voice.png' class='pull-left'></image>
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view  class='content-box' wx:for="{{listCon}}" wx:key="content" wx:for-index="key">
+        <view class='box-item' data-index='{{key}}' bindtap='hiddenBtnCon'>
+          <text>如你所愿</text>
+          <image src='../../images/more_img01.png' class="hide{{showView?'show':''}}"></image>
+          <image src='../../images/more_img.png' class="hide{{showView?'':'show'}}"></image>
+          <view class='english clearfix {{item.hidden == true? "hide":"show"}}'>
+            <text class='pull-left'>Be as you wish to seem</text>
+            <image src='../../images/voice.png' class='pull-left'></image>
+          </view>
+          <image src='../../images/cuo.png' class='mark'></image>
+        </view>
+      </view>
+      <view class='content-box' wx:for="{{listCon1}}" wx:key="content" wx:for-index="key">
+        <view class='box-item' data-index='{{key}}' bindtap='hiddenBtnCon1'>
+          <text>如你所愿</text>
+          <image src='../../images/more_img01.png' class="hide{{showView?'show':''}}"></image>
+          <image src='../../images/more_img.png' class="hide{{showView?'':'show'}}"></image>
+          <view class='english clearfix {{item.hidden == true? "hide":"show"}}'>
+            <text class='pull-left'>Be as you wish to seem</text>
+            <image src='../../images/voice.png' class='pull-left'></image>
+          </view>
+          <image src='../../images/dui.png' class='mark'></image>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="bottom-section clearfix">
+    <navigator url="../home/home" redirect="true"><span><image src="../../images/bottom_icon01.png"></image></span><p>聊吧</p></navigator>
+    <navigator url="../ready/ready" redirect="true"><span><image src="../../images/bottom_icon02.png"></image></span><p>准备</p></navigator>
+    <navigator url="../3.2study/3.2study" redirect="true" class="active"><span><image src="../../images/bottom_color03.png"></image></span><p>学习</p></navigator>
+    <navigator url="../my/my" redirect="true"><span><image src="../../images/bottom_icon04.png"></image></span><p>我的</p></navigator>
+</view>

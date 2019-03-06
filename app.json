@@ -1,0 +1,20 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/3.2study/3.2study",
+    "pages/home/home",
+    "pages/demo/demo",
+    "pages/my/my",
+    "pages/ready/ready",
+    "pages/method/method",
+    "pages/theory/theory",
+    "pages/calendar/calendar"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

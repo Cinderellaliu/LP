@@ -1,0 +1,114 @@
+/* pages/3.2study/3.2study.wxss */
+view{
+  box-sizing: border-box;
+}
+.pull-left{float: left!important;}
+.pull-right{float: right!important;}
+.clearfix{clear: both;overflow: hidden;}
+.study-top{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  width: 100%;
+  height: 218rpx;
+  background: #90241a;
+}
+.study-top-box{
+  padding: 0 32rpx 0 29rpx;
+  margin: 0 20rpx;
+  width: 100%;
+  height: 140rpx;
+  line-height: 140rpx;
+  background: #fff;
+  border-radius: 5rpx;
+}
+.study-top-box s-left{
+  height: 82rpx;
+  line-height: 82rpx;
+}
+.study-top-box image{
+  margin:29rpx 20rpx 0 0;
+  width: 82rpx;
+  height: 82rpx;
+  border-radius: 50%;
+}
+.study-top-box .name{
+  display: inline-block;
+  font-size: 32rpx;
+}
+.study-top-box .s-right{
+  font-size: 26rpx;
+  color: #9b9b9b;
+}
+.study-top-box .s-right text{
+  color: #90241a;
+}
+swiper{
+  min-height: 1000rpx;
+}
+.swiper-tab{
+  margin: 30rpx auto;
+  width: 72%;
+  border: 2rpx solid #b2b2b2;
+  text-align: center;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-radius: 44rpx;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.swiper-tab-item{
+  width: 33%; 
+  color:#434343;
+  font-size: 28rpx;
+  text-align: center;
+}
+.swiper-tab-item.active{
+  color:#fff;
+  border: 0;
+  background: #90241a;
+}
+.content-box{
+  padding: 0 0 0 30rpx;
+}
+.content-box .box-item{
+  position: relative;
+  padding: 26rpx 0;
+  min-height: 97rpx;
+  font-size: 32rpx;
+  border-bottom: 2rpx solid #d9d9d9;
+}
+.content-box .box-item text{
+}
+.content-box .box-item image{
+  margin: 0 0 0 10rpx;
+  width: 22rpx;
+  height: 12rpx;
+}
+.content-box .box-item .english{
+  margin: 10rpx 0 0 0;
+  font-size:26rpx;
+}
+.content-box .english image{
+  margin:10rpx 0 0 25rpx;
+  width: 22rpx;
+  height: 22rpx;
+}
+.hide{
+display: none;
+}
+/*显示 */
+.show{
+display: block;
+}
+
+.content-box .box-item image.mark{
+  width: 32rpx;
+  height: 32rpx;
+  position: absolute;
+  right: 20rpx;
+  bottom: 50%;
+  transform: translateY(50%);
+  z-index: 9999999;
+}
